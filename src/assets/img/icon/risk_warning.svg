@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>risk_warning</title>
+    <desc>Created with Sketch.</desc>
+    <g id="1.8.5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="#2.1.1#dapps_home" transform="translate(-208.000000, -840.000000)">
+            <g id="dapps" transform="translate(0.000000, 616.000000)">
+                <g id="4" transform="translate(0.000000, 192.000000)">
+                    <g id="risk_warning" transform="translate(208.000000, 32.000000)">
+                        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0" x="0.5" y="0.5" width="31" height="31"></rect>
+                        <g id="error" transform="translate(3.000000, 5.000000)" fill="#FF3B30" fill-rule="nonzero">
+                            <circle id="Oval" cx="24" cy="21" r="2"></circle>
+                            <path d="M15,2 C15,3.105 14.105,3 13,3 C11.895,3 11,3.105 11,2 C11,0.895 11.895,0 13,0 C14.105,0 15,0.895 15,2 Z" id="Path"></path>
+                            <circle id="Oval" cx="2" cy="21" r="2"></circle>
+                            <path d="M14.836,1.21 L13,1 L11.164,1.21 L0.3,19.948 L2.144,23 L13,23 L23.856,23 L25.7,19.948 L14.836,1.21 Z M14.212,8.36 L14.012,14.833 L11.988,14.833 L11.788,8.36 L14.212,8.36 Z M13.003,19.189 C12.175,19.189 11.68,18.748 11.68,18.007 C11.68,17.252 12.174,16.811 13.003,16.811 C13.825,16.811 14.319,17.252 14.319,18.007 C14.319,18.748 13.825,19.189 13.003,19.189 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
