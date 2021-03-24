@@ -88,7 +88,7 @@
           </a> -->
           <a href="https://twitter.com/SolanaProject" target="_blank" rel="noreferror"
             ><img src="@/assets/img/icon/twitter.png" width="20"
-          /> Twitter</a>
+          /></a>
         </p>
       </div>
     </article>
