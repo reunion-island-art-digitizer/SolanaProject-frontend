@@ -1,7 +1,7 @@
 <template>
   <article>
     <div class="card-border tvl-part" v-if="klineDataList&&klineDataList.length>0">
-      <h3>Total Value Locked in Sonala DeFi</h3>
+      <h3>Total Value Locked in Solana DeFi</h3>
       <h1>${{webUtil.addCommas(klineDataList[klineDataList.length-1])}}
         <span v-if="tvlPercentChange>=0" class="color-up">+{{tvlPercentChange}}%</span>
         <span v-else class="color-down">{{tvlPercentChange}}%</span>
