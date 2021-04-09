@@ -37,6 +37,8 @@
       <input type="text" name="github" placeholder="Github" v-model="github" autocomplete="off">
       <div class="list-name">Coinmarketcap</div>
       <input type="text" name="coinmarketcap" placeholder="Coinmarketcap" v-model="coinmarketcap" autocomplete="off">
+      <div class="list-name">Medium</div>
+      <input type="text" name="medium" placeholder="Medium" v-model="medium" autocomplete="off">
       <div class="list-name">Smart Contract Addresses</div>
       <textarea name="contractAddresses" placeholder="Support multiple smart contract addresses, separate them by spaces" rows="4" v-model="scAddress" autocomplete="off"></textarea>
       <!-- 提交申请 -->
@@ -58,9 +60,9 @@ export default {
       twitter: '',
       telegram: '',
       github: '',
-      coingecko:'',
       discord:'',
       coinmarketcap: '',
+      medium: '',
       scAddress:'',
       lock: false,
       shortByte: 0, //简介字符数

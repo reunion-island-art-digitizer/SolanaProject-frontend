@@ -161,31 +161,18 @@ export default {
         "getTags" +
         (this.selectedCategory.ID ? "?cateID=" + this.selectedCategory.ID : "");
 
+      this.tags = [
+        {
+          ID: '0',
+          title: "All",
+        },
+      ];
       this.axios.get(URL).then((res) => {
         if (res.data.success) {
-          this.tags = [
-            {
-              ID: '0',
-              title: "All",
-            },
-          ].concat(res.data.data.tags);
-        } else {
-          this.tags = [
-            {
-              ID: '0',
-              title: "All",
-            },
-          ]
-          console.log(res.data.message);
+          this.tags = this.tags.concat(res.data.data.tags);
         }
         this.getListByTag();
       }).catch(err=>{
-        this.tags = [
-          {
-            ID: '0',
-            title: "All",
-          },
-        ];
         this.getListByTag();
         console.log(err);
       })
@@ -224,22 +211,19 @@ export default {
         this.$loading(0);
         if (res.data.success) {
           this.projectList = res.data.data;
+          // 将开关关闭
+          this.sw = false;
+          this.isAllList = false;
 
           // 搜索框有数据
           if (this.searchInfo) {
-            // 将开关关闭
-            this.sw = false;
             if (this.projectList && this.projectList.length > 0) {
               this.isAllList = true;
-            } else {
-              this.isAllList = false;
             }
           } else {
             if (this.projectList.length < this.limit_num) {
               this.isAllList = true;
-              this.sw = false;
             } else {
-              this.isAllList = false;
               this.sw = true;
             }
           }

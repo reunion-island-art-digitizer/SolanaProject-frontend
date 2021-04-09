@@ -41,9 +41,9 @@ Vue.mixin({
         "twitter",
         "telegram",
         "github",
-        "job",
         "coinmarketcap",
-        "discord"
+        "discord",
+        "medium"
       ],
     };
   },
