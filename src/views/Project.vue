@@ -78,9 +78,9 @@
           </ul>
         </div>
         <!-- tvl -->
-        <div class="dev-active dev-active-single" v-if="project.dappradar">
+        <div class="dev-active dev-active-single" v-if="project.tvlShort">
           <h6>Total Value Locked</h6>
-          <h2>{{project.dappradar.tvlShort?project.dappradar.tvlShort:'--'}}</h2>
+          <h2>{{project.tvlShort?project.tvlShort:'--'}}</h2>
         </div>
         <!-- <ul class="dev-active flex-between" v-if="project.dappradar">
           <li>
