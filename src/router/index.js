@@ -35,6 +35,11 @@ const routes = [
     name: 'Submit',
     component: () => import('../views/Submit.vue')
   },
+  {
+    path: '/rpcserver',
+    name: 'RPCServer',
+    component: () => import('../views/RPCServer.vue')
+  },
 ]
 
 const router = new VueRouter({

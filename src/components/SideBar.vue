@@ -35,6 +35,13 @@
             <img src="@/assets/img/sidebar/Rank.png" width="24" />
             <span>Rank</span>
           </li>
+          <li
+            :class="{ active: selectedTab == 'RPCServer' && !isMobile }"
+            @click="goRoute('RPCServer')"
+          >
+            <img src="@/assets/img/sidebar/RPCServer.png" width="24" />
+            <span>RPC Server</span>
+          </li>
         </ul>
         <div class="flex-between category-title">
           <p class="text-white">Project</p>
