@@ -21,6 +21,8 @@
         </li>
       </ul>
       <div class="null" v-else>No Information</div>
+      <h2 class="title">Node Infrastructure</h2>
+      <a class="text-underline" href="http://www.rpcpool.com" target="_blank" rel="noopener noreferrer">http://www.rpcpool.com</a>
     </main>
   </section>
 </template>
@@ -35,6 +37,10 @@ export default {
         },
         {
           url: "https://api.mainnet-beta.solana.com",
+          speed: 0,
+        },
+        {
+          url: "https://api.rpcpool.com",
           speed: 0,
         },
       ],
