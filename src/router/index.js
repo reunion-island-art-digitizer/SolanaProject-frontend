@@ -41,9 +41,7 @@ const routes = [
     component: () => import('../views/RPCServer.vue')
   },
 ]
-
 const router = new VueRouter({
-  base: process.env.BASE_URL,
   routes
 })
 
