@@ -6,6 +6,7 @@
 import * as echarts from "echarts/core";
 import {
     GridComponent,
+    GraphicComponent,
     TooltipComponent
 } from 'echarts/components';
 import {
@@ -16,7 +17,7 @@ import {
 } from 'echarts/renderers';
 import { mapActions } from 'vuex';
 echarts.use(
-    [GridComponent,TooltipComponent, LineChart, CanvasRenderer]
+    [GraphicComponent,GridComponent,TooltipComponent, LineChart, CanvasRenderer]
 );
 export default {
   props: ["timeList", "dataList",'isDetail'],
@@ -34,6 +35,11 @@ export default {
       if(!this.timeList||this.timeList.length<=1){
         return false;
       }
+      let timeList = this.timeList;
+      if(!this.isDetail){
+        timeList = this.timeList.map(v=>v.slice(5,10));
+      }
+
       //画图
       this.$refs.klineDOM.removeAttribute("_echarts_instance_")
       this.myChart = echarts.init(this.$refs.klineDOM);
@@ -41,6 +47,17 @@ export default {
       // k线配置
       var option = {
         color: this.mainColor,
+        backgroundColor:"#fff",
+        graphic: {
+          left: 0,
+          bottom: 80,
+          type: 'image',
+          style: {
+            image: require('../assets/img/icon/watermark.png'),
+            width:200,
+            opacity:0.4,
+          }
+        },
         tooltip: {
           trigger: "axis",
           backgroundColor: "#fff",
@@ -54,7 +71,7 @@ export default {
         xAxis: {
           show:!this.isDetail,
           axisLine:false, //坐标轴线
-          data: this.timeList,
+          data: timeList,
         },
         yAxis:{
           scale: true,

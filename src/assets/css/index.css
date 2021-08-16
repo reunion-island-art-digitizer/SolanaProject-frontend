@@ -135,6 +135,10 @@ textarea::-webkit-input-placeholder {
   margin-right: 6px;
 }
 
+.mb-40 {
+  margin-bottom: 40px;
+}
+
 .text-white {
   color: #fff!important;
 }

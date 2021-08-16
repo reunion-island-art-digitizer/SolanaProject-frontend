@@ -45,6 +45,12 @@ Vue.mixin({
         "discord",
         "medium"
       ],
+      sidebar:{
+        Home:"Home",
+        // Index:"Index",
+        Rank:"Rank",
+        RPCServer:"RPC Server",
+      },
     };
   },
   computed: {

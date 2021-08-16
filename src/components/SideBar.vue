@@ -22,25 +22,13 @@
       <div class="scroll-content">
         <ul class="tabs">
           <li
-            :class="{ active: selectedTab == 'Home' && !isMobile }"
-            @click="goRoute('Home')"
+            v-for="(item,type) in sidebar"
+            :key="type"
+            :class="{ active: selectedTab == type && !isMobile }"
+            @click="goRoute(type)"
           >
-            <img src="@/assets/img/sidebar/Home.png" width="24" />
-            <span>Home</span>
-          </li>
-          <li
-            :class="{ active: selectedTab == 'Rank' && !isMobile }"
-            @click="goRoute('Rank')"
-          >
-            <img src="@/assets/img/sidebar/Rank.png" width="24" />
-            <span>Rank</span>
-          </li>
-          <li
-            :class="{ active: selectedTab == 'RPCServer' && !isMobile }"
-            @click="goRoute('RPCServer')"
-          >
-            <img src="@/assets/img/sidebar/RPCServer.png" width="24" />
-            <span>RPC Server</span>
+            <img :src="require('@/assets/img/sidebar/'+type+'.png')" width="24" />
+            <span>{{item}}</span>
           </li>
         </ul>
         <div class="flex-between category-title">
