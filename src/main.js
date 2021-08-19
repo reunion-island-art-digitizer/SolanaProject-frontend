@@ -47,7 +47,7 @@ Vue.mixin({
       ],
       sidebar:{
         Home:"Home",
-        // Index:"Index",
+        Index:"Index",
         Rank:"Rank",
         RPCServer:"RPC Server",
       },
