@@ -1,7 +1,7 @@
 module.exports = {
   publicPath: process.env.NODE_ENV === "production" ? "https://resource.staked.xyz/" : "/",
   assetsDir: 'solanaproject',
-    outputDir:'https://reunion-island-art-digitizer.github.io/SolanaProject-frontend/',
+    outputDir:'https://reunion-island-art-digitizer.github.io/SolanaProject-frontend/public/index.html',
   configureWebpack: {
     resolve: {
       // .mjs needed for https://github.com/graphql/graphql-js/issues/1272
