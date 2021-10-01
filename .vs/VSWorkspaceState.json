@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\public\\solanaproject",
+    "\\public\\solanaproject\\ossUpload\\plugin",
+    "\\src\\router",
+    "\\src\\store",
+    "\\src\\views"
+  ],
+  "PreviewInSolutionExplorer": false
+}
