@@ -1,5 +1,7 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "https://resource.staked.xyz/" : "/",
+    publicPath: process.env.NODE_ENV === ''production' 
+        ? '/SolanaProject-frontend/' 
+        : '?',
   assetsDir: 'solanaproject',
     outputDir:'./SolanaProject-frontend',
   configureWebpack: {
